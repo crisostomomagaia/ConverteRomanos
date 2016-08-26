@@ -36,9 +36,15 @@ public class ConversaoTest {
 	@Test(expected = RuntimeException.class)
 	public void naoDeveAceitarNumerosNegativos() {
 		Conversao c = new Conversao();
-		c.converte(-1);
+		c.converte(0);
 	}
 
+	@Test(expected = RuntimeException.class)
+	public void naoDeveAceitarNumerosSuperioresA3999() {
+		Conversao c = new Conversao();
+		c.converte(4000);
+	}
+	
 	@Test
 	public void converteSuperiorQue10EMultiploDe10() {
 		Conversao c = new Conversao();
@@ -96,7 +102,7 @@ public class ConversaoTest {
 	@Test
 	public void superiorA899eInferiorOuIgualA1000() {
 		Conversao c = new Conversao();
-		assertEquals("CMV", c.converte(905));
+		assertEquals("CMLV", c.converte(955));
 		assertEquals("M", c.converte(1000));
 	}
 

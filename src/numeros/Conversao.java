@@ -124,11 +124,6 @@ public class Conversao {
 			unid=String.valueOf((String.valueOf(numero)).substring(2, 4));
 			
 		}
-		
-		System.out.println("dezena: "+dezena);
-		System.out.println("unidade: "+unid);
-
-		
 		numero=Integer.parseInt(dezena);
 		
 		if(numero<=5){
@@ -168,7 +163,7 @@ public class Conversao {
 	
 	
 	private boolean validaNumero(int numero){
-		if(numero<=0){
+		if(numero<=0||numero>3999){
 			return false;
 		}
 		return true;
