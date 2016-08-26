@@ -72,24 +72,28 @@ public class ConversaoTest {
 	}
 
 	// Testes para centenas
+	@Test
 	public void superiorA100eInferiorOuIgualA399() {
 		Conversao c = new Conversao();
 		assertEquals("CCLIX", c.converte(259));
 		assertEquals("CCCXCIX", c.converte(399));
 	}
 
+	@Test
 	public void superiorA399eInferiorouIgualA599() {
 		Conversao c = new Conversao();
 		assertEquals("CDLXXIII", c.converte(473));
 		assertEquals("DXCIX", c.converte(599));
 	}
 	
+	@Test
 	public void superiorA599eInferiorOuIgualA899() {
 		Conversao c = new Conversao();
 		assertEquals("DCCXXXII", c.converte(732));
 		assertEquals("DCCCXCIX", c.converte(899));
 	}
 	
+	@Test
 	public void superiorA899eInferiorOuIgualA1000() {
 		Conversao c = new Conversao();
 		assertEquals("CMV", c.converte(905));

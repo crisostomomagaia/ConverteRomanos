@@ -4,7 +4,7 @@ public class TestaConversao {
 
 	public static void main(String[] args) {
 		Conversao c=new Conversao();
-		System.out.println(c.converte(100));
+		System.out.println(c.converte(905));
 
 	}
 
