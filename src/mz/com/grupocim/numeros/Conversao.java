@@ -1,4 +1,4 @@
-package numeros;
+package mz.com.grupocim.numeros;
 
 public class Conversao {
 	private String romanos;

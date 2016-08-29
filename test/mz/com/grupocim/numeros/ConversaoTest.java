@@ -1,6 +1,9 @@
-package numeros;
+package mz.com.grupocim.numeros;
 
 import org.junit.Test;
+
+import mz.com.grupocim.numeros.Conversao;
+
 import static org.junit.Assert.*;
 
 public class ConversaoTest {
